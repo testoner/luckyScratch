@@ -99,6 +99,7 @@ canvas.addEventListener("mouseleave", () => {
 });
 
 const scratch = (x, y) => {
+  context.globalCompositeOperation = "destination-out";
   context.beginPath();
   context.arc(x, y, 25, 0, 2 * Math.PI);
   context.fill();
