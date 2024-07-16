@@ -1,16 +1,5 @@
 let text = document.querySelector('.text');
 
-const container = document.querySelector('.container');
-const image = document.querySelector('.coin');
-
-container.addEventListener('mousemove', (e) => {
-  const rect = container.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-
-  image.style.transform = `translate(${x+10}px, ${y+10}px)`;
-});
-
 text.addEventListener('click',() => {
   let img1 = document.querySelector('.img-left');
   let img2 = document.querySelector('.img-right');

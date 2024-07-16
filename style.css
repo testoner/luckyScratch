@@ -43,7 +43,6 @@
     bottom: -150px;
     left:-300px;
   }
-
   .wrapper{
     padding-right: 63px;
     position: relative;
@@ -64,10 +63,12 @@
   }
 
   .coin{
+    left: -40px;
+    bottom: -80px;
     z-index: 999;
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 124px;
+    height: 181px;
     background-image: url('assets/Coin.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -75,9 +76,6 @@
     transition: transform 0.1s ease-out;
   }
 
-  .container:hover{
-    cursor: url('./assets/Coin.png');
-  }
   .base,
   #scratch {
     height: 346px;
